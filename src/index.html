@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="journal.css">
+    <title>Daily Journal</title>
+</head>
+<body>
+ <form action="">
+
+        <!-- Date field. Input elements in HTML can be of type date which will automatically render a calendar control for you to use. -->
+        <fieldset>
+            <label for="journalDate">Date of entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        
+        <!-- Concepts covered. A short input field of type text where you enter in what concept(s) were covered and are driving the journal entry. -->
+        <fieldset>
+            <label for="inputConcepts">Concepts covered</label>
+            <input type="text" name="inputConcepts" id="inputConcepts">
+        </fieldset>
+
+        <!-- Journal entry. This is a textarea field where you can enter in as much text about what you learned, how you felt, and plans for the upcoming days. -->
+        <fieldset>
+            <label for="journalArea">Journal entry</label>
+            <textarea name="journalArea" id="journalArea" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <!-- Mood. This should be a select element with as many option child elements as you would like to describe your mood for the day. You can start with the simply happy, fine, and sad values, or pick your own scaling system. -->
+        <fieldset>
+            <label for="moodElements">Today I am feeling. . .</label>
+            <select name="moodElements" id="moodElements">
+                <option value="elated">Elated</option>
+                <option value="happy">Happy</option>
+                <option value="positive">Somewhat positive</option>
+                <option value="neutral">Pretty neutral</option>
+                <option value="negative">Somewhat negative</option>
+                <option value="dicouraged">Discouraged</option>
+                <option value="sad">Sad</option>
+                <option value="brownies">I need brownies</option>
+            </select>
+        </fieldset>
+        <!-- After you have completed the form, place a button element beneath it labeled Record Journal Entry, or any other text that you would like. -->
+        <button>Submit Journal Entry</button>
+    </form>
+</body>
+</html>
