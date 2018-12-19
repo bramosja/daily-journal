@@ -20,28 +20,6 @@ const journalEntry = [
     }
 ];
 
-
-/*
-    Purpose: To create, and return, a string template that
-    represents a single journal entry object as HTML
-
-    Arguments: journalEntry (object)
-*/
-// const makeJournalEntryComponent = (journal) => {
-//     // Create your own HTML structure for a journal entry
-//     for(let i = 0; i < journal.length; i++) {
-//     let createEntryContainer = document.createElement("p")
-//     console.log(createEntryContainer);
-//     let addEntryHtml = document.querySelector("p");
-//     addEntryHtml.innerHTML = journal[i];
-//     }
-// };
-
-// journalEntry.forEach(entry => {
-//     console.log(entry);
-//     document.querySelector(".entryLog").innerHTML = entry.date;
-// });
-
 const container = document.createElement("div");
 let element = document.querySelector(".entryLog");
 element.appendChild(container);
@@ -58,15 +36,13 @@ journalEntry.forEach(entry => {
 
     container.appendChild(section);
 
+    // add text content to each element and add it to the section
     h1.textContent = entry.date;
     section.appendChild(h1);
-
     h2.textContent = entry.concept;
     section.appendChild(h2);
-
     paragraph.textContent = entry.entry;
     section.appendChild(paragraph);
-
     paragraphMood.textContent = entry.mood;
     section.appendChild(paragraphMood);
 });
