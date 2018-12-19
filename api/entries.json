@@ -1,0 +1,22 @@
+{
+    "journalEntry": [
+    {
+        "date": "07/24/2018",
+        "concept": "Array methods",
+        "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
+        "mood": "Ok"
+    },
+    {
+        "date": "12/10/2018",
+        "concept": "For loops",
+        "entry": "We discussed for loops today. I feel confident in my ability to apply this method.",
+        "mood": "Positive"
+    },
+    {
+        "date": "11/28/2018",
+        "concept": "Inner HTML",
+        "entry": "Today we discussed adding to the DOM using inner HTML. Initially I felt good about it, but after discussing textContent as an alternative I started ",
+        "mood": "Ok"
+    }
+]
+}
