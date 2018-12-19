@@ -9,8 +9,10 @@ element.appendChild(container);
 // add journal entries to the dom from my local json database: entries.json
 data.journalEntry().then( eachEntry => {
     eachEntry.forEach(entry => {
+        // create section for each journal entry
         const section = document.createElement("section");
         container.appendChild(section);
+
         // add the section to the existing container
         entryComponent.createTag("h1", entry.date);
         entryComponent.createTag("h3", entry.concept);
